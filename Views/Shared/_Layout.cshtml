@@ -1,0 +1,115 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - Dakota Gymnastics Academy</title>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @Scripts.Render("~/bundles/modernizr")
+    @Styles.Render("~/Content/css")
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+</head>
+
+@{
+    var PdfBirthdayFull = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - Birthday Parties Full Page.pdf?revision=") + DateTime.Now.Ticks.ToString();
+}
+
+<body>
+    <div class="navbar navbar-expand-lg fixed-top navbar-dark dga-navbar dga-background-logo-blue">
+        <div class="container dga-navbar-container">
+            <div class="navbar-brand">
+                <img class="logo-dot" src="~/Content/images/Logo-only-d-alt.png" />
+                @Html.ActionLink("DAKOTA GYMNASTICS ACADEMY", "Index", "Home", null, new { @class = "navbar-brand dga-navbar-name-link" })
+                @Html.ActionLink("DGA", "Index", "Home", null, new { @class = "navbar-brand dga-navbar-name-link-small" })
+            </div>
+            <button class="navbar-toggler ml-auto custom-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon custom-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="nav navbar-nav">
+                    <li class="nav-item">@Html.ActionLink("HOME", "Index", "Home", null, new { @class = "nav-link dga-navbar-link" })</li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dga-navbar-link dropdown-toggle" href="/Programs">
+                            PROGRAMS
+                        </a>
+                        <div class="dropdown-menu dga-dropdown-menu">
+                            @Html.ActionLink("Active Start (Toddler/Preschool)", "Index", "Programs", null, null, "activeStart", null, new { @class = "dropdown-item dga-dropdown-item" })
+                            @Html.ActionLink("Women's Artistic", "Index", "Programs", null, null, "womenArtistic", null, new { @class = "dropdown-item dga-dropdown-item" })
+                            @Html.ActionLink("Men's Artistic", "Index", "Programs", null, null, "menArtistic", null, new { @class = "dropdown-item dga-dropdown-item" })
+                            @Html.ActionLink("Acrobatic", "Index", "Programs", null, null, "acrobatic", null, new { @class = "dropdown-item dga-dropdown-item" })
+                            @Html.ActionLink("Introductory Parkour", "Index", "Programs", null, null, "parkour", null, new { @class = "dropdown-item dga-dropdown-item" })
+                            @Html.ActionLink("Strength and Conditioning", "Index", "Programs", null, null, "conditioning", null, new { @class = "dropdown-item dga-dropdown-item" })
+                            @Html.ActionLink("Adult Gymnastics", "Index", "Programs", null, null, "adult", null, new { @class = "dropdown-item dga-dropdown-item" })
+                            @Html.ActionLink("Private Lessons", "Index", "Programs", null, null, "private", null, new { @class = "dropdown-item dga-dropdown-item" })
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dga-navbar-link dropdown-toggle" href="/Programs/Camps">
+                            CAMPS
+                        </a>
+                        <div class="dropdown-menu dga-dropdown-menu">
+                            @Html.ActionLink("Spring Break Camp", "Camps", "Programs", null, null, "springBreak", null, new { @class = "dropdown-item dga-dropdown-item" })
+                            @Html.ActionLink("Summer Camps", "Camps", "Programs", null, null, "summerCamps", null, new { @class = "dropdown-item dga-dropdown-item" })
+                            @Html.ActionLink("PD Day Camps", "Camps", "Programs", null, null, "pdDays", null, new { @class = "dropdown-item dga-dropdown-item" })
+                            @Html.ActionLink("December Break Camp", "Camps", "Programs", null, null, "decemberBreak", null, new { @class = "dropdown-item dga-dropdown-item" })
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("FIELD TRIPS", "FieldTrips", "Programs", null, new { @class = "nav-link dga-navbar-link" })
+                    </li>
+                    <li class="nav-item">
+                        <a href="@PdfBirthdayFull" class="nav-link dga-navbar-link" target="_blank">BIRTHDAYS</a>
+                        @*@Html.ActionLink("BIRTHDAYS", "Birthdays", "Programs", null, new { @class = "nav-link dga-navbar-link" })*@
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("REGISTER", "Index", "Registration", null, new { @class = "nav-link dga-navbar-link" })
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dga-navbar-link dropdown-toggle" href="/Home/About">
+                            ABOUT
+                        </a>
+                        <div class="dropdown-menu dga-dropdown-menu">
+                            @Html.ActionLink("About Us", "About", "Home", null, null, "aboutus", null, new { @class = "dropdown-item dga-dropdown-item" })
+                            @Html.ActionLink("Our Coaches", "About", "Home", null, null, "coaches", null, new { @class = "dropdown-item dga-dropdown-item" })
+                            @Html.ActionLink("Our Gym", "About", "Home", null, null, "ourgym", null, new { @class = "dropdown-item dga-dropdown-item" })
+                            @Html.ActionLink("Recent News", "Index", "News", null, new { @class = "dropdown-item dga-dropdown-item" })
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        @Html.ActionLink("CONTACT", "Contact", "Home", null, new { @class = "nav-link dga-navbar-link" })
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.facebook.com/DakotaGymnasticsAcademy" target="_blank" class="dga-nav-icon"><span style="color: white; margin-left: 12px; font-size: 16pt; margin-top: 10px;" class="fab fa-facebook"></span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="https://www.instagram.com/DakotaGymnasticsAcademy" target="_blank" class="dga-nav-icon"><span style="color: white; margin-left: 8px; font-size: 16pt; margin-top: 10px;" class="fab fa-instagram"></span></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+        <main role="main" class="container">
+        @RenderBody()
+        <hr />
+        <footer class="text-center">
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>About Dakota GymnasticsAcademy</h6>
+                    <p class="footer-text">Dakota Gymnastics Academy offers a wide variety of programs from parent-and-tots to competitive gymnastics. Our programming centres around four popular gymnastics disciplines: women’s artistic gymnastics, men’s artistic gymnastics, acrobatic gymnastics, and gym-for-all.</p>
+                </div>
+                <div class="col-md-6">
+                    <h6>Contact Us</h6>
+                    <div class="footer-text">Phone: 431-777-0496</div>
+                    <div class="footer-text">Email: <a href="mailto:registration@dakotagymnasticsacademy.ca">registration@dakotagymnasticsacademy.ca</a> </div>
+                    <div class="footer-text">621 Oxford Street</div>
+                    <div class="footer-text">Winnipeg, MB</div>
+                </div>
+            </div>
+            <p class="footer-text">&copy; @DateTime.Now.Year - Dakota Gymnastics Academy | <a href="https://www.facebook.com/DakotaGymnasticsAcademy" target="_blank"><span class="fab fa-facebook"></span></a> <a href="https://www.instagram.com/DakotaGymnasticsAcademy" target="_blank"><span style="color: black;" class="fab fa-instagram"></span></a> | Contact the <a href="mailto:webmaster@dakotagymnasticsacademy.com">Webmaster</a></p>
+        </footer>
+    </main>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>

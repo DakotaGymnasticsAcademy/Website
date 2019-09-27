@@ -1,0 +1,126 @@
+﻿@{
+    ViewBag.Title = "Dakota Gymnastics Academy";
+    var PdfForm = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - Registration Form.pdf?revision=") + DateTime.Now.Ticks.ToString();
+    var PdfFall2019Schedule = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - 2019 Fall Schedule.pdf?revision=") + DateTime.Now.Ticks.ToString();
+}
+
+
+<div class="row margin-top-small dga-news-top-of-page">
+    <div class="col-md-12 dga-news-banner-title"><h5>We are located at 621 Oxford Street in River Heights!</h5></div>
+</div>
+
+<div class="row margin-top-small dga-news-top-of-page">
+    <div class="col-md-12 dga-news-banner-title"><h5>Fall registration is now open!</h5></div>
+</div>
+
+<div class="row margin-top-small">
+    <div id="dga-carousel" class="carousel slide col-md-8">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#dga-carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#dga-carousel" data-slide-to="1"></li>
+            <li data-target="#dga-carousel" data-slide-to="2"></li>
+            <li data-target="#dga-carousel" data-slide-to="3"></li>
+            @*<li data-target="#dga-carousel" data-slide-to="4"></li>
+                <li data-target="#dga-carousel" data-slide-to="5"></li>*@
+        </ol>
+
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+                <img src="~/Content/images/Logo-Slider.png" alt="Slide 1" class="dga-slide" />
+            </div>
+
+            <div class="carousel-item">
+                <img src="~/Content/images/carousel-1.jpg" alt="Slide 2" class="dga-slide" />
+            </div>
+
+            <div class="carousel-item">
+                <img src="~/Content/images/carousel-2.jpg" alt="Slide 3" class="dga-slide" />
+            </div>
+
+            <div class="carousel-item">
+                <img src="~/Content/images/carousel-3.jpg" alt="Slide 4" class="dga-slide" />
+            </div>
+
+            @*<div class="carousel-item">
+                    <img src="~/Content/images/carousel-4.jpg" alt="Slide 5" class="dga-slide" />
+                </div>
+                <div class="carousel-item">
+                    <img src="~/Content/images/carousel-5.jpg" alt="Slide 6" class="dga-slide" />
+                </div>*@
+        </div>
+
+        <!-- Controls -->
+        <a class="carousel-control-prev" href="#dga-carousel" data-slide="prev">
+            <span class="carousel-control-prev-icon"></span>
+        </a>
+        <a class="carousel-control-next" href="#dga-carousel" data-slide="next">
+            <span class="carousel-control-next-icon"></span>
+        </a>
+    </div>
+    <div class="col-md-4">
+        <h3>Recent News</h3>
+        <h7 class="font-weight-bold">August 2019</h7>
+        <div class="news-text-front-page margin-top-small">&#x25FE; We are offering new classes this fall for adults:</div>
+        <div class="news-text-front-page margin-top-small" style="margin-left: 20px;">&#x25B8; <i>Wushu Martial Arts</i> on Tuesdays and Thursdays 8-9pm</div>
+        <div class="news-text-front-page margin-top-small" style="margin-left: 20px;">&#x25B8; <i>Rehabilitation and Healing</i> on Tuesdays 10:30-11:30am with a senior's discount</div>
+        <div class="news-text-front-page margin-top-small">&#x25FE; A new class <i>Acro and Tumbling for Dance and Cheer</i> is being offered Mondays from 6 to 7:30pm.</div>
+        <div class="news-text-front-page margin-top-small margin-bottom-small">&#x25FE; Fall registration is ongoing with plenty of space left in most classes!</div>
+        <h7 class="font-weight-bold">June 2019</h7>
+        <div class="news-text-front-page margin-top-small">&#x25FE; There is still room in our summer camps and the Tuesday night class! Register today! </div>
+        <div class="news-text-front-page margin-top-small margin-bottom-small">&#x25FE; Please note that there will be no gymnastics classes on July 1st or August 5th.</div>
+        <p>@Html.ActionLink("News Archive »", "Index", "News", null, new { @class = "margin-top-medium" })</p>
+    </div>
+</div>
+
+@*<div class="row margin-top-medium dga-news-banner">
+        <div class="col-md-12 dga-news-banner-title"><h5>Registration is now open for the 2019 Winter-Spring programs!<br />You can view the <a href="@PdfSchedule" target="_blank">schedule here</a> and please feel free <a href="mailto:registration@dakotagymnasticsacademy.ca">contact us</a> with any questions!</h5></div>
+    </div>*@
+
+<div class="row margin-top-medium dga-news-banner2">
+    <div class="col-md-12 dga-news-banner-title"><h5>We are very pleased to announce for for a second straight year, Coach Adik has been awarded the <a href="/Content/images/Adik-Order-Sport-Excellence.jpg" target="_blank">Sport Manitoba Order of Sport Excellence</a> for his contributions to gymnastics in Manitoba!</h5></div>
+</div>
+
+<div class="row margin-top-medium">
+    <div class="col-md-3">
+        <h3>About Us</h3>
+        <h6 class="margin-top-medium">Dakota Gymnastics Academy Offers:</h6>
+        <ol class="margin-top-small">
+            <li>Instruction by NCCP certified coaches</li>
+            <li>Structured and challenging programs</li>
+            <li>Safe, fun and positive environment</li>
+        </ol>
+        <p>@Html.ActionLink("More About Us »", "About", "Home", null, new { @class = "" })</p>
+    </div>
+    <div class="col-md-3">
+        <h3>Why Gymnastics?</h3>
+        <p>Gymnastics is considered a foundational sport by the International Olympic committee. Athletes will develop:</p>
+        <ol class="margin-top-medium">
+            <li>Strength, flexibility and discipline</li>
+            <li>Confidence and positive mental health</li>
+            <li>Work ethic and discipline</li>
+            <li>Exceptional fitness and much more</li>
+        </ol>
+        <p>@Html.ActionLink("Learn More »", "About", "Home", null, null, "whygymnastics", null, null)</p>
+    </div>
+    <div class="col-md-3">
+        <h3>Programs</h3>
+        <p>Dakota Gymnastics Academy offers a wide variety of programs from parent-and-tots to competitive gymnastics. Our programming centres around four popular gymnastics disciplines: women’s artistic gymnastics, men’s artistic gymnastics, acrobatic gymnastics, and gym-for-all.</p>
+        <p>@Html.ActionLink("More Information »", "Index", "Programs", null, null)</p>
+    </div>
+    <div class="col-md-3">
+        <h3>Registration</h3>
+        <p>Registration for Spring 2019 is <span class="font-weight-bold">now open</span>. Winter registration is ongoing so why wait for spring – start today! Please read the information on the registration page to understand how to register and our payment/refund policy.</p>
+        <p>If you are already familiar with how to register and our policies, you can download and print the <a href="@PdfForm" target="_blank">Registration Form</a> and register today!</p>
+        <p>@Html.ActionLink("More Information »", "Index", "Registration", null, null)</p>
+    </div>
+</div>
+
+<script language="javascript" type="text/javascript">
+
+    $(document).ready(function () {
+        $('#dga-carousel').carousel({ interval: 5000 });
+    });
+
+</script>
