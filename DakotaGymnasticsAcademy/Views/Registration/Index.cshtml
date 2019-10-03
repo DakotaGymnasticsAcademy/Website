@@ -2,46 +2,35 @@
 @{
     ViewBag.Title = "Registration - Dakota Gymnastics Academy";
     var PdfSchedule = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - 2019 Winter-Spring Schedule.pdf?revision=") + DateTime.Now.Ticks.ToString();
-    var PdfScheduleSpring = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - 2019 Spring Schedule.pdf?revision=") + DateTime.Now.Ticks.ToString();
     var PdfScheduleFall = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - 2019 Fall Schedule.pdf?revision=") + DateTime.Now.Ticks.ToString();
+    var PdfScheduleWinter = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - 2020 Winter Schedule.pdf?revision=") + DateTime.Now.Ticks.ToString();
     var PdfForm = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - Registration Form.pdf?revision=") + DateTime.Now.Ticks.ToString();
     var PdfFormShort = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - Registration Form - Short.pdf?revision=") + DateTime.Now.Ticks.ToString();
 }
 
 <div id="body" class="margin-top-medium">
-    <h3>2019 FALL REGISTRATION IS NOW OPEN!</h3>
+    <h3>2020 WINTER REGISTRATION BEGINS NOVEMBER 1st!</h3>
 
-    <h5 style="color:darkred !important">Fall classes start Monday September 9th, 2019 and run until Saturday December 21st, 2019.</h5>
-    
-    <h5 style="color: darkblue !important">Don't want to wait until this fall? We're offering classes on Tuesday nights this summer for 9 weeks. Classes start on July 2nd and end on August 27th.</h5>
-    <ul>
-        <li>Tuesday 5-6:30pm - Recreational Gymnastics for Boys and Girls aged 5+</li>
-        <li>Tuesday 6:30-8pm - Adult Gymnastics</li>
-        <li>The cost is $185 plus fees for each class.</li>
-        <ul>
-            <li>$45 for insurance unless previously registered</li>
-            <li>$25 equipment fee per family unless previously paid</li>
-        </ul>
-    </ul>
+    <h5 style="color:darkred !important">Winter classes start Monday January 6th, 2020 and run until Saturday March 28th, 2020.</h5>
 
-    <h6 style="color:darkred !important">Many spring classes still have room if you want to start now. Class fees are prorated for anyone who joins before the end of the spring session.</h6>
-    <br/>
+    <h6 style="color:darkred !important">Many fall classes still have room if you want to start now. Class fees are prorated for anyone who joins before the end of the spring session.</h6>
+    <br />
 
     <h4>HOW TO REGISTER</h4>
 
     <p>If you would like to register your child in one of our exciting programs, download, print and fill out the <a href="@PdfForm" target="_blank"> registration form.</a> Please drop off the completed form and a cheque payable to <i>Dakota Gymnastics Academy</i> (emailed forms and e-transfers are also accepted) to our gym at 621 Oxford Street during class hours to guarantee your spot. Completed registrations forms will be accepted at the first class, but your spot is only guaranteed once payment is received.</p>
 
     @*<p style="font-style: italic">If you have previously registered in a program during the current year (Sep to Aug), you can use the <a href="@PdfFormShort" target="_blank">2019 Registration Short Form</a> to register!</p>*@
+    <p><a href="@PdfScheduleWinter" target="_blank">Winter 2020 Class Schedule</a></p>
     <p><a href="@PdfScheduleFall" target="_blank">Fall 2019 Class Schedule</a></p>
-    <p><a href="@PdfScheduleSpring" target="_blank">Spring 2019 Class Schedule</a></p>
-    <p><a href="@PdfForm" target="_blank">2019 Registration Form </a></p>
+    <p><a href="@PdfForm" target="_blank">2020 Registration Form </a></p>
     <p>Email us at <a href="mailto:registration@dakotagymnasticsacademy.ca">registration@dakotagymnasticsacademy.ca</a> to register or reserve your spot today!</p>
 
     <h4>CURIOUS ABOUT GYMNASTICS?</h4>
 
     <p>At Dakota Gymnastics Academy, we realize kids often want to try things out before committing. Unfortunately due to recent changes in the MGA insurance policy, we can no longer offer one-time drop-ins for individuals (a group rate is possible) just to try out a class. However, you can request to come in for an assessment if you're not sure which level your child is at. Assessments may be 15 minutes or longer depending on the child and their current skill level. Please contact us for assessment pricing.</p>
     <p>Maybe you just want to check it out? We would also love it if you stopped by with your child to see our facility, meet the coaches and watch a class!</p>
-    
+
     <p>You can also come and visit us during our open house on June 8th, 2019 from 5pm to 7pm. Meet the coaches and try out the equipment!</p>
 
     <h4>IMPORTANT INFORMATION</h4>
@@ -65,7 +54,7 @@
         <li>The $25 annual non-refundable equipment maintenance fee is required with your registration (note: this fee only needs to be paid once per family per year).</li>
         <li>Refunds are offered up to 2 weeks after a class has begun. Refunds are subject to a $30 administrative fee as well as the cost of classes that have already been held. Please notify us the day before your class begins if you wish to cancel or there will be a charge for that class. There will be no refunds after the second week of class.</li>
     </ul>
-    
+
     <p><b>*</b> If you've applied for funding assistance, please contact us so that we can try to accomodate your family!</p>
 
     <p>Not sure if you can afford it? <a href="http://www.kidsportcanada.ca/" target="_blank">KidSport</a> and <a href="https://jumpstart.canadiantire.ca/content/microsites/jumpstart/en.html">Jumpstart</a> are national not-for-profit organizations that provide financial assistance for registration fees and equipment to kids aged 18 and under. Please visit their websites for more information!</p>
