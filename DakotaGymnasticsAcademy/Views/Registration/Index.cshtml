@@ -1,48 +1,41 @@
 ﻿
 @{
     ViewBag.Title = "Registration - Dakota Gymnastics Academy";
-    var PdfSchedule = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - 2019 Winter-Spring Schedule.pdf?revision=") + DateTime.Now.Ticks.ToString();
-    var PdfScheduleFall = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - 2019 Fall Schedule.pdf?revision=") + DateTime.Now.Ticks.ToString();
-    var PdfScheduleWinter = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - 2020 Winter Schedule.pdf?revision=") + DateTime.Now.Ticks.ToString();
+    var PdfScheduleSpring = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - 2020 Spring Schedule.pdf?revision=") + DateTime.Now.Ticks.ToString();
     var PdfForm = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - Registration Form.pdf?revision=") + DateTime.Now.Ticks.ToString();
     var PdfFormShort = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - Registration Form - Short.pdf?revision=") + DateTime.Now.Ticks.ToString();
 }
 
 <div id="body" class="margin-top-medium">
-    <h3>2020 WINTER REGISTRATION BEGINS NOVEMBER 1st!</h3>
+    <h3>2020 SPRING REGISTRATION IS OPEN!</h3>
 
-    <h5 style="color:darkred !important">Winter classes start Monday January 6th, 2020 and run until Saturday March 28th, 2020.</h5>
+    <h5 style="color:darkred !important">Spring classes start Monday April 6th, 2020 and run until Saturday June 27th, 2020.</h5>
 
-    <h6 style="color:darkred !important">Many fall classes still have room if you want to start now. Class fees are prorated for anyone who joins before the end of the spring session.</h6>
     <br />
 
     <h4>HOW TO REGISTER</h4>
 
     <p>If you would like to register your child in one of our exciting programs, download, print and fill out the <a href="@PdfForm" target="_blank"> registration form.</a> Please drop off the completed form and a cheque payable to <i>Dakota Gymnastics Academy</i> (emailed forms and e-transfers are also accepted) to our gym at 621 Oxford Street during class hours to guarantee your spot. Completed registrations forms will be accepted at the first class, but your spot is only guaranteed once payment is received.</p>
 
-    @*<p style="font-style: italic">If you have previously registered in a program during the current year (Sep to Aug), you can use the <a href="@PdfFormShort" target="_blank">2019 Registration Short Form</a> to register!</p>*@
-    <p><a href="@PdfScheduleWinter" target="_blank">Winter 2020 Class Schedule</a></p>
-    <p><a href="@PdfScheduleFall" target="_blank">Fall 2019 Class Schedule</a></p>
+    <p><a href="@PdfScheduleSpring" target="_blank">Spring 2020 Class Schedule</a></p>
     <p><a href="@PdfForm" target="_blank">2020 Registration Form </a></p>
     <p>Email us at <a href="mailto:registration@dakotagymnasticsacademy.ca">registration@dakotagymnasticsacademy.ca</a> to register or reserve your spot today!</p>
 
     <h4>CURIOUS ABOUT GYMNASTICS?</h4>
 
-    <p>At Dakota Gymnastics Academy, we realize kids often want to try things out before committing. Unfortunately due to recent changes in the MGA insurance policy, we can no longer offer one-time drop-ins for individuals (a group rate is possible) just to try out a class. However, you can request to come in for an assessment if you're not sure which level your child is at. Assessments may be 15 minutes or longer depending on the child and their current skill level. Please contact us for assessment pricing.</p>
+    <p>At Dakota Gymnastics Academy, we realize kids often want to try things out before committing. We offer one-time tryout/assessment class. Price for 1 hour class is $15. Price for 1.5 hour class is $20.</p>
     <p>Maybe you just want to check it out? We would also love it if you stopped by with your child to see our facility, meet the coaches and watch a class!</p>
-
-    <p>You can also come and visit us during our open house on June 8th, 2019 from 5pm to 7pm. Meet the coaches and try out the equipment!</p>
-
+   
     <h4>IMPORTANT INFORMATION</h4>
 
     <h5>Payment/Refund Policy</h5>
 
     <ul>
         <li>In order to guarantee your spot in a class, payments must be submitted when you register.<b>*</b></li>
-        <li>Recreational classes must be paid in full, including the MGA and equipment fee before the first class.</li>
-        <li>Pre-competitive and Competitive athletes who train multiple times per week may pay monthly (the MGA and equipment fee must be paid the with the first month's payment).</li>
+        <li>Recreational classes must be paid in full, including the membership and equipment fee before the first class.</li>
+        <li>Pre-competitive and Competitive athletes who train multiple times per week may pay monthly (the membership and equipment fee must be paid the with the first month's payment).</li>
         <ul>
-            <li>Starting in the fall of 2019, post-dated cheques will need to be submitted for the monthly fees.</li>
+            <li>Post-dated cheques will need to be submitted for the monthly fees.</li>
             <li>Athletes who have not paid will not be allowed on the gym floor to train.</li>
         </ul>
         <li>Payments can be made by cash, cheque or e-transfer to <a href="mailto:payment@dakotagymnasticsacademy.ca">payment@dakotagymnasticsacademy.ca</a>.</li>
@@ -50,7 +43,7 @@
             <li><b>When paying by e-transfer, please include the name of your child(ren) in the message!</b></li>
         </ul>
         <li>Class fees are not pro-rated due to holidays and no make-up classes will be offered.</li>
-        <li>The $45 non-refundable annual registration fee for Manitoba Gymnastics membership and insurance is required with your registration. This fee is paid once per year. If you have multiple children attending classes, the fee needs to be paid for each child due to insurance purposes.</li>
+        <li>The $45 non-refundable annual registration fee. This fee is paid once per year. If you have multiple children attending classes, the fee needs to be paid for each child.</li>
         <li>The $25 annual non-refundable equipment maintenance fee is required with your registration (note: this fee only needs to be paid once per family per year).</li>
         <li>Refunds are offered up to 2 weeks after a class has begun. Refunds are subject to a $30 administrative fee as well as the cost of classes that have already been held. Please notify us the day before your class begins if you wish to cancel or there will be a charge for that class. There will be no refunds after the second week of class.</li>
     </ul>

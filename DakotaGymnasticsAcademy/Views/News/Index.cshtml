@@ -1,11 +1,5 @@
 ﻿@{
     ViewBag.Title = "News Archive - Dakota Gymnastics Academy";
-
-    var PdfFall2019Schedule = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - 2019 Fall Schedule.pdf?revision=") + DateTime.Now.Ticks.ToString();
-    var PdfSchedule = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - 2019 Winter-Spring Schedule.pdf?revision=") + DateTime.Now.Ticks.ToString();
-    var PdfForm = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - Registration Form.pdf?revision=") + DateTime.Now.Ticks.ToString();
-    var PdfShortForm = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - Registration Form - Short.pdf?revision=") + DateTime.Now.Ticks.ToString();
-    var PdfAnnouncement = @Url.Content("~/Content/documents/Dakota Poster - Nov2018 - We Are Moving.pdf?revision=") + DateTime.Now.Ticks.ToString();
 }
 
 <div id="body" class="margin-top-medium">
@@ -14,38 +8,5 @@
     <div class="news-text-front-page margin-top-small margin-bottom-small">&#x25FE; Gym will be closed Monday October 14 and Monday November 11</div>
     <div class="news-text-front-page margin-top-small margin-bottom-small">&#x25FE; Winter break December 22nd - January 5th</div>
     <br />
-    <h7 class="font-weight-bold">August 2019</h7>
-    <div class="col-md-12 news-text-front-page margin-top-small">&#x25FE; We are offering new classes this fall for adults:</div>
-    <div class="col-md-12 news-text-front-page" style="margin-left: 20px;">&#x25B8; <i>Wushu Martial Arts</i> on Tuesdays and Thursdays 8-9pm</div>
-    <div class="col-md-12 news-text-front-page" style="margin-left: 20px;">&#x25B8; <i>Rehabilitation and Healing</i> on Tuesdays 10:30-11:30am with a senior's discount</div>
-    <div class="col-md-12 news-text-front-page margin-top-small">&#x25FE; A new class <i>Acro and Tumbling for Dance and Cheer</i> is being offered Mondays from 6 to 7:30pm.</div>
-    <div class="col-md-12 news-text-front-page margin-top-small">&#x25FE; Fall registration is ongoing with plenty of space left in most classes!</div>
-    <br />
-    <h7 class="font-weight-bold">June 2019</h7>
-    <div class="col-md-12 news-text-front-page margin-top-small">&#x25FE; There is still room in our summer camps and the Tuesday night class! Register today! </div>
-    <div class="col-md-12 news-text-front-page margin-top-small">&#x25FE; Please note that there will be no gymnastics classes on July 1st or August 5th.</div>
-    <br />
-    <h7 class="font-weight-bold">May 2019</h7>
-    <div class="col-md-12 news-text-front-page margin-top-small">&#x25FE; The <a href="@PdfFall2019Schedule" target="_blank">schedule for Fall 2019</a> is now available and registration is open. More information is available on our @Html.ActionLink("registration page", "Index", "Registration", null, null).</div>
-    <div class="col-md-12 news-text-front-page margin-top-small">&#x25FE; We are offering recreational gymnastics classes for kids and adults on Tuesday this summer. Find all the details on our @Html.ActionLink("registration page", "Index", "Registration", null, null).</div>
-    <div class="col-md-12 news-text-front-page margin-top-small">&#x25FE; There is still room in our @Html.ActionLink("Summer Camps", "Camps", "Programs", null, null), register today!</div>
-    <div class="col-md-12 news-text-front-page margin-top-small">&#x25FE; We're planning another open house on June 8th from 5pm to 7pm. Come meet the coaches and explore our gym!</div>
-    <br />
-    <h7 class="font-weight-bold">April 2019</h7>
-    <div class="col-md-12 news-text-front-page margin-top-small">&#x25FE; MGA has changed insurance provider and the fees have increased. New members will have to pay $45 to register with MGA effective immediately. If you have any questions or concerns, please don't hesitate to talk to us.</div>
-    <br />
-    <h7 class="font-weight-bold">Febraury 2019</h7>
-    <div class="col-md-12 news-text-front-page margin-top-small">&#x25FE; We're having another open house on February 23rd from 5pm to 7pm. Come meet the coaches and explore our gym!</div>
-    <div class="col-md-12 news-text-front-page margin-top-small">&#x25FE; Registration for Spring 2019 is now open. Winter registration is ongoing so why wait for spring – start today!</div>
-    <br />
-    <h7 class="font-weight-bold margin-top-small">January 2019</h7>
-    <div class="col-md-12 news-text-front-page margin-top-small">&#x25FE; With our new space, we are now offering <b>Field Trips</b> for schools, day cares and other organizations. Contact us to arrange a time that works for you!</div>
-    <div class="col-md-12 news-text-front-page margin-top-small">&#x25FE; The open house was a huge success thanks to all those who attended. Register now, classes start this Saturday January 5th.</div>
-    <br />
-    <h7 class="font-weight-bold margin-top-small">November 2018</h7>
-    <div class="col-md-12 news-text-front-page margin-top-small">&#x25FE; <b>We're moving!</b> Read the <a href="@PdfAnnouncement" target="_blank">announcement</a>! Starting in January we will be operating out of the gym located in the Korean Presbyterian Church located at <a href="https://www.google.ca/maps/place/621+Oxford+St,+Winnipeg,+MB+R3M+3J3" target="_blank">621 Oxford St</a> in River Heights.</div>
-    <div class="col-md-12 news-text-front-page margin-top-small">&#x25FE; The 2019 Winter-Spring schedule has been updated! You can view the <a href="@PdfSchedule" target="_blank">schedule here</a> and download the <a href="@PdfForm" target="_blank">registration form here</a>. Please feel free <a href="mailto:registration@dakotagymnasticsacademy.ca">contact us</a> with any questions!</div>
-    <div class="col-md-12 news-text-front-page" style="margin-left: 20px;">&#x25B8; If you were already registered with us in 2018, you can use the <a href="@PdfShortForm" target="_blank">short form</a> instead.</div>
-    <div class="col-md-12 news-text-front-page margin-top-small">&#x25FE; We are pleased to begin offering @Html.ActionLink("adult gymnastics", "Index", "Programs", null, null, "adult", null, null), please see the <a href="@PdfSchedule" target="_blank">schedule</a> for times and pricing!</div>
-    <div class="col-md-12 news-text-front-page" style="margin-left: 20px;">&#x25B8; You can try adult gymnastics right now, starting November 24, 2018 for 5 weeks. The cost is $65 plus the MGA membership ($35/year) and equipment fees ($25/year per family).</div>
+   
 </div>

@@ -4,13 +4,20 @@
     var PdfWinter2020Schedule = @Url.Content("~/Content/documents/Dakota Gymnastics Academy - 2020 Winter Schedule.pdf?revision=") + DateTime.Now.Ticks.ToString();
 }
 
-
 <div class="row margin-top-small dga-news-top-of-page">
     <div class="col-md-12 dga-news-banner-title"><h5>We are located at 621 Oxford Street in River Heights!</h5></div>
 </div>
 
-<div class="row margin-top-small dga-news-top-of-page">
-    <div class="col-md-12 dga-news-banner-title"><h5>Winter registration begins November 1st!</h5></div>
+@*<div class="row margin-top-small dga-news-top-of-page">
+    <div class="col-md-12 dga-news-banner-title"><h5>Winter registration begins November 1st! </h5></div>
+</div>*@
+
+<div class="row margin-top-small dga-special-news-top-of-page">
+    <div class="col-md-12 dga-news-banner-title">
+        <h5>
+            Registration for the spring session is open!!!
+        </h5>
+    </div>
 </div>
 
 <div class="row margin-top-small">
@@ -61,6 +68,8 @@
     </div>
     <div class="col-md-4">
         <h3>Recent News</h3>
+        <div class="news-text-front-page margin-top-small margin-bottom-small">&#x25FE; No regular classes on Monday February 17th. Family Drop In on Monday February 17th from 12-1:30 and 6-7:30 pm. Only $10 per child and parents go free. 90 minutes of free play on the gymnastics equipment with supervision by DGA staff. Anyone 12 years and under MUST be accompanied by an adult.</div>
+        <div class="news-text-front-page margin-top-small margin-bottom-small">&#x25FE; Murat left us suddenly without previous notice but we thank him and wish him all the best and there will be new coaches. One of them will start his work tomorrow.</div>
         <div class="news-text-front-page margin-top-small margin-bottom-small">&#x25FE; Gym will be closed Monday October 14 and Monday November 11</div>
         <div class="news-text-front-page margin-top-small margin-bottom-small">&#x25FE; Winter break December 22nd - January 5th</div>
         <h7 class="font-weight-bold">August 2019</h7>
@@ -69,9 +78,6 @@
         <div class="news-text-front-page margin-top-small" style="margin-left: 20px;">&#x25B8; <i>Rehabilitation and Healing</i> on Tuesdays 10:30-11:30am with a senior's discount</div>
         <div class="news-text-front-page margin-top-small">&#x25FE; A new class <i>Acro and Tumbling for Dance and Cheer</i> is being offered Mondays from 6 to 7:30pm.</div>
         <div class="news-text-front-page margin-top-small margin-bottom-small">&#x25FE; Fall registration is ongoing with plenty of space left in most classes!</div>
-        <h7 class="font-weight-bold">June 2019</h7>
-        <div class="news-text-front-page margin-top-small">&#x25FE; There is still room in our summer camps and the Tuesday night class! Register today! </div>
-        <div class="news-text-front-page margin-top-small margin-bottom-small">&#x25FE; Please note that there will be no gymnastics classes on July 1st or August 5th.</div>
         <p>@Html.ActionLink("News Archive »", "Index", "News", null, new { @class = "margin-top-medium" })</p>
     </div>
 </div>
@@ -113,7 +119,7 @@
     </div>
     <div class="col-md-3">
         <h3>Registration</h3>
-        <p>Registration for Spring 2019 is <span class="font-weight-bold">now open</span>. Winter registration is ongoing so why wait for spring – start today! Please read the information on the registration page to understand how to register and our payment/refund policy.</p>
+        <p>Winter registration is ongoing so why wait for spring – start today! Please read the information on the registration page to understand how to register and our payment/refund policy.</p>
         <p>If you are already familiar with how to register and our policies, you can download and print the <a href="@PdfForm" target="_blank">Registration Form</a> and register today!</p>
         <p>@Html.ActionLink("More Information »", "Index", "Registration", null, null)</p>
     </div>

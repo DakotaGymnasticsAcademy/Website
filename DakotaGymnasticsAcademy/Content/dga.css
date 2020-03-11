@@ -250,6 +250,21 @@ img.logo-dot {
     align-items: center;
 }
 
+
+.dga-special-news-top-of-page {
+    margin-left: 5%;
+    padding-top: 6px;
+    width: 90%;
+    border-style: solid;
+    border-color: red;
+    border-width: 1px;
+    background-color: #FFFF66;
+    color: #AA2222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .dga-news-banner-title {
     font-weight: bold;
     font-size: 1.9em;
